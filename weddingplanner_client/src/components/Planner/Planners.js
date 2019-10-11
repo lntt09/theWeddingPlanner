@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ToDoList from '../ToDoList/ToDoList'
 
 class Planners extends Component{
     constructor(props){
@@ -20,7 +21,10 @@ class Planners extends Component{
     }
     render(){
         return(
-            <h1>My Wedding Planner</h1>
+            <div>
+                <h1>My Wedding Planner</h1>
+                <ToDoList />
+            </div>
         )
     }
 }
