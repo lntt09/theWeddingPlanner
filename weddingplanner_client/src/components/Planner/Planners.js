@@ -19,21 +19,21 @@ class Planners extends Component{
         const parsedResponse = await planners.json()
         console.log(parsedResponse);
         this.setState({
-            planners: parsedResponse
+            planners: parsedResponse.planners
         })
     }
 
     render(){
-        const planners = this.state.planners.map((planners)=>{
+        const planners = this.state.planners.map((planner)=>{
             return(
-                <div id key={planners.id}>
-                    <h3>{planners.first_name}</h3>
-                    <h3>{planners.last_name}</h3>
+                <div id key={planner.id}>
+                    <h3>{planner.first_name} {planner.last_name}</h3>
+                    
                 </div>
             )
         })
         return(
-            <div>
+            <div className='myplanner'>
                 <h1 className="planner_H1">My Wedding Planner</h1>
                 {planners}
                 <ToDoList />
