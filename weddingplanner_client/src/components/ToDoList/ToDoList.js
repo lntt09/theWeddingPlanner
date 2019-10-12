@@ -30,20 +30,21 @@ class ToDoList extends Component {
         e.preventDefault();
     }
 
-    deleteItem(key){
-        var filteredItems = this.state.items.filter(function(item){
-            return (item.key !== key)
-        })
-
+    deleteItem(key) {
+        var filteredItems = this.state.items.filter(function (item) {
+          return (item.key !== key);
+        });
+       
         this.setState({
-            items: filteredItems
-        })
-    }
+          items: filteredItems
+        });
+      }
 
     render(){
         return(
            <div className="todoListMain">
             <div className="header">
+                <h1 className='todo_title'>The ToDo List</h1>
                 <form onSubmit={this.addItem}>
                     <input ref={(a) => this._inputElement =a} placehlder="Enter A Task" />
                     <button type="submit">Add Task</button>

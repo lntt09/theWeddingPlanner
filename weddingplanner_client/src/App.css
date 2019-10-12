@@ -1,8 +1,10 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, purple, lavender);
 }
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
 }
 
@@ -19,4 +21,4 @@
 
 .App-link {
   color: #09d3ac;
-}
+} */

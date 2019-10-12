@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import ToDoList from '../ToDoList/ToDoList'
+import './Planners.css'
 
 class Planners extends Component{
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.state = {
             planners: []
         }
@@ -13,16 +14,28 @@ class Planners extends Component{
         this.getPlanners()
     }
 
-    getPlanners(){
-        fetch('http://localhost:4000/planners')
-			.then(response => response.json())
-			.then(json => console.log(json))
-            .catch(error => console.error(error))
+    getPlanners = async() =>{
+        const planners = await fetch('http://localhost:4000/planners');
+        const parsedResponse = await planners.json()
+        console.log(parsedResponse);
+        this.setState({
+            planners: parsedResponse
+        })
     }
+
     render(){
+        const planners = this.state.planners.map((planners)=>{
+            return(
+                <div id key={planners.id}>
+                    <h3>{planners.first_name}</h3>
+                    <h3>{planners.last_name}</h3>
+                </div>
+            )
+        })
         return(
             <div>
-                <h1>My Wedding Planner</h1>
+                <h1 className="planner_H1">My Wedding Planner</h1>
+                {planners}
                 <ToDoList />
             </div>
         )
