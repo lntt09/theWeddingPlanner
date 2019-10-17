@@ -35,7 +35,7 @@ class Planners extends Component{
         return(
             <div className='myplanner'>
                 <h1 className="planner_H1">My Wedding Planner</h1>
-                {planners}
+                {planners.id}
                 <ToDoList />
             </div>
         )

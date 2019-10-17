@@ -4,13 +4,31 @@
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   
 }
+.introheaderbgimg img{
+  width: 100%;
+  height: 30%;
+  position: relative;
+  text-align: center;
+}
+
 
 .introheader{
   font-family: Andasia;
-  font-size: 65px;
+  font-size: 35px;
+
+  /* z-index: 100;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  text-align: center;
+  transform: translate(-00%, -50%); */
+}
+
+.aboutparagraph{
+  text-align: center;
 }
 
 * {box-sizing: border-box;}
@@ -47,6 +65,7 @@
 /* Style the input container */
 .topnav .login-container {
   float: right;
+
 }
 
 /* Style the input field inside the navbar */
@@ -68,6 +87,7 @@
   font-size: 12px;
   border: none;
   cursor: pointer;
+  
 }
 
 .topnav .login-container button:hover {
