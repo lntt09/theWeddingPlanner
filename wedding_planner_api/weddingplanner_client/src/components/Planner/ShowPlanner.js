@@ -1,5 +1,5 @@
 import React from 'react';
-import EditPlanner from '../Planner/EditPlanner'
+import EditPlanner from './EditPlanner'
 
 function ShowPlanner(props){
     const planners = props.planners.map(function(planner){

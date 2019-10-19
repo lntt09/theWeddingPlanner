@@ -9,9 +9,9 @@ function App(){
     <div className="App">
       
       <div className="topnav">
-        <a className="active" href="#home">Home</a>
-        <a href="#about">Vendors</a>
-        <a href="#contact">Venues</a>
+        <a className="active" href="/planner">Home</a>
+        <a href="https://www.tripadvisor.com/Search?geo=60898&pid=3826&redirect=&startTime=&uiOrigin=&q=florist&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=__2F__&searchSessionId=F4C4C944BD5B265DEF2284464264209C1571497024945ssid&social_typeahead_2018_feature=true&sid=F4C4C944BD5B265DEF2284464264209C1571497082269&blockRedirect=true&ssrc=a">Vendors</a>
+        <a href="https://www.tripadvisor.com/Search?geo=60898&searchNearby=&pid=3826&redirect=&startTime=&uiOrigin=&q=wedding%20venues&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=__2F__&searchSessionId=F4C4C944BD5B265DEF2284464264209C1571497024945ssid&social_typeahead_2018_feature=true&sid=F4C4C944BD5B265DEF2284464264209C1571497040526&blockRedirect=true">Venues</a>
         <a href="#joinus">Join Us</a>
         
         <div className="login-container">

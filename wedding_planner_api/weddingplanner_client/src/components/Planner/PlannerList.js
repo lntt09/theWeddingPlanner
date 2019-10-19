@@ -1,5 +1,6 @@
 import React from 'react';
-import EditPlanner from '../Planner/EditPlanner'
+import EditPlanner from './EditPlanner'
+import './PlannerList.css'
 
 function PlannerList(props){
     const planners = props.planners.map(function(planner){
@@ -15,7 +16,7 @@ function PlannerList(props){
     })
 
     return(
-        <div>
+        <div className="listofplanners">
             {planners}
         </div>
     )

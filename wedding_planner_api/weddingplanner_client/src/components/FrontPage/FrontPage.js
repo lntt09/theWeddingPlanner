@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PlannerList from '../Planner/PlannerList'
 import NewPlanner from '../Planner/NewPlanner'
+import './FrontPage.css'
 
 class FrontPage extends Component{
     constructor(){
@@ -117,7 +118,7 @@ class FrontPage extends Component{
         // })
         return(
             <div>
-                <h3>Front Page of planners</h3>
+                <h1 className="frontpageHeader">Our Current Brides</h1>
                 {/* {planners} */}
 
                 <PlannerList planners={this.state.planners} deletePlanner={this.deletePlanner} updatePlanner={this.updatePlanner}/>
