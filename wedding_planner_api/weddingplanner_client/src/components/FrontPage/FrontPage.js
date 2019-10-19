@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PlannerList from '../Planner/PlannerList'
 import NewPlanner from '../Planner/NewPlanner'
+
 import './FrontPage.css'
 
 class FrontPage extends Component{
@@ -66,7 +67,7 @@ class FrontPage extends Component{
             const parsedResponse = await newPlanner.json();
             if(parsedResponse.status.code === 201){
                 this.setState({
-                    planners: [parsedResponse.data, ...this.state.planners]
+                    planners: [parsedResponse, ...this.state.planners]
                 })
             }
         }
@@ -124,8 +125,6 @@ class FrontPage extends Component{
                 <PlannerList planners={this.state.planners} deletePlanner={this.deletePlanner} updatePlanner={this.updatePlanner}/>
                 <NewPlanner createPlanner={this.createPlanner} />
                 
-
-                {/* <Planners /> */}
             </div>
         )
     }

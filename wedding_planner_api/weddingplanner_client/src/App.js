@@ -10,8 +10,8 @@ function App(){
       
       <div className="topnav">
         <a className="active" href="/planner">Home</a>
-        <a href="https://www.tripadvisor.com/Search?geo=60898&pid=3826&redirect=&startTime=&uiOrigin=&q=florist&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=__2F__&searchSessionId=F4C4C944BD5B265DEF2284464264209C1571497024945ssid&social_typeahead_2018_feature=true&sid=F4C4C944BD5B265DEF2284464264209C1571497082269&blockRedirect=true&ssrc=a">Vendors</a>
-        <a href="https://www.tripadvisor.com/Search?geo=60898&searchNearby=&pid=3826&redirect=&startTime=&uiOrigin=&q=wedding%20venues&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=__2F__&searchSessionId=F4C4C944BD5B265DEF2284464264209C1571497024945ssid&social_typeahead_2018_feature=true&sid=F4C4C944BD5B265DEF2284464264209C1571497040526&blockRedirect=true">Venues</a>
+        <a href="https://www.tripadvisor.com/Search?geo=60898&pid=3826&redirect=&startTime=&uiOrigin=&q=florist&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=__2F__&searchSessionId=F4C4C944BD5B265DEF2284464264209C1571497024945ssid&social_typeahead_2018_feature=true&sid=F4C4C944BD5B265DEF2284464264209C1571497082269&blockRedirect=true&ssrc=a" target="blank">Vendors</a>
+        <a href="https://www.tripadvisor.com/Search?geo=60898&searchNearby=&pid=3826&redirect=&startTime=&uiOrigin=&q=wedding%20venues&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=__2F__&searchSessionId=F4C4C944BD5B265DEF2284464264209C1571497024945ssid&social_typeahead_2018_feature=true&sid=F4C4C944BD5B265DEF2284464264209C1571497040526&blockRedirect=true" target="blank">Venues</a>
         <a href="#joinus">Join Us</a>
         
         <div className="login-container">
@@ -24,7 +24,7 @@ function App(){
         
       </div>
       <div className='introheaderbgimg'>
-        <img src="https://lh3.googleusercontent.com/2yn98IhcW-lb77XuWzJ6_AI6GZ8tRtVYsDUedQqW2B2PIsZUxrCWeO34ZM8_WZEeJMbPHOHifqGh0rlVztLyqzteL-pS9El8V7uu8lcRoGz9NQwX1ZUQokH-AsMG2iP0Whdb7x8avQ=w2400" alt="" />
+        <img src="https://lh3.googleusercontent.com/RhN_1tE_sfRcY2QI7eH8W9PelTi7kasoGZosT3__yLKbP0jwuyzpv76qSggVEXdncbbaPCqugn7RQEMsQjCpEwY70wefyKga6CN9WH9mr9tbqipqEr6VHtKDwZWq4jFJPIf-81GLug=w2400" alt="" />
         {/* <h1 className='introheader'>The Wedding Planner</h1> */}
       </div>
       

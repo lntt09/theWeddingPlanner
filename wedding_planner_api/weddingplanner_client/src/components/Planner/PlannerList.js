@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import EditPlanner from './EditPlanner'
 import './PlannerList.css'
 
@@ -7,6 +8,7 @@ function PlannerList(props){
         return(
             <div id key={planner.id}>
                 <a href={'/planner/'+ planner.id}><h3>{planner.first_name} {planner.last_name}</h3></a>
+                <p>{planner.wedding_date}</p>
 
             
             <EditPlanner planner={planner} updatePlanner={props.updatePlanner}/>
