@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import EditPlanner from './EditPlanner'
 import './PlannerList.css'
 
@@ -12,7 +12,7 @@ function PlannerList(props){
 
             
             <EditPlanner planner={planner} updatePlanner={props.updatePlanner}/>
-            <button type="btn" class="btn btn-outline-danger btn-sm"onClick={()=>{props.deletePlanner(planner.id)}}>Delete</button>
+            <button type="btn" className="btn btn-outline-danger btn-sm"onClick={()=>{props.deletePlanner(planner.id)}}>Delete</button>
             </div>
         )
     })

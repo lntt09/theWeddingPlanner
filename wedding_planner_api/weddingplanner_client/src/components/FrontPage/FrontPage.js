@@ -25,7 +25,7 @@ class FrontPage extends Component{
             }
         })
         const parsedResponse = await updatePlanner.json();
-        if(parsedResponse.status.code === 201){
+        if(parsedResponse.status === 201){
             this.setState({
                 planners: formData
             })
@@ -42,7 +42,7 @@ class FrontPage extends Component{
                 // credentials: "include"
             });
             const parsedResponse = await deletePlanner.json();
-            if(parsedResponse.status.code === 200){
+            if(parsedResponse.status === 200){
                 this.setState({
                     planners: this.state.planners.filter(planner => planner.id !== id)
                 })
@@ -65,7 +65,7 @@ class FrontPage extends Component{
                 }
             })
             const parsedResponse = await newPlanner.json();
-            if(parsedResponse.status.code === 201){
+            if(parsedResponse.status === 201){
                 this.setState({
                     planners: [parsedResponse, ...this.state.planners]
                 })
@@ -109,19 +109,11 @@ class FrontPage extends Component{
     }
     
     render(){
-        // const planners = this.state.planners.map((planner)=>{
-        //     return(
-        //         <div id key={planner.id}>
-        //             <a href={'/planner/'+ planner.id}><h3>{planner.first_name} {planner.last_name}</h3></a>
-                    
-        //         </div>
-        //     )
-        // })
+       
         return(
             <div>
                 <h1 className="frontpageHeader">Our Current Brides</h1>
-                {/* {planners} */}
-
+               
                 <PlannerList planners={this.state.planners} deletePlanner={this.deletePlanner} updatePlanner={this.updatePlanner}/>
                 <NewPlanner createPlanner={this.createPlanner} />
                 

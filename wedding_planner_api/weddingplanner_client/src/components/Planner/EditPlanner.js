@@ -33,6 +33,7 @@ class EditPlanner extends React.Component {
       e.preventDefault();
       console.log("Ready to update");
       const validUpdate = await this.props.updatePlanner(this.props.planner.id, this.state)
+      console.log(validUpdate)
       if (validUpdate === true){
         this.toggle();
       }

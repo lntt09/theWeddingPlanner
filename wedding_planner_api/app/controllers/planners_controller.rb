@@ -6,7 +6,7 @@ class PlannersController < ApplicationController
     end
 
     def show
-        planner = Planer.find(params[:id])
+        planner = Planner.find(params[:id])
         render json: {status: 200, planner: planner}
     end
 
