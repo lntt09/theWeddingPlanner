@@ -1,0 +1,3 @@
+class FoodVendor < ApplicationRecord
+    
+end

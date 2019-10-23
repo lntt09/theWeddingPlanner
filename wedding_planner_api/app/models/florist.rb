@@ -1,0 +1,3 @@
+class Florist < ApplicationRecord
+    
+end

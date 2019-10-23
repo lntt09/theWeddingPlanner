@@ -10,10 +10,66 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_08_224551) do
+ActiveRecord::Schema.define(version: 2019_10_23_173748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "band", force: :cascade do |t|
+    t.string "bandName"
+    t.string "phoneNumber"
+  end
+
+  create_table "bands", force: :cascade do |t|
+    t.string "bandName"
+    t.string "phoneNumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "florist", force: :cascade do |t|
+    t.string "floristName"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.string "phoneNumber"
+  end
+
+  create_table "florists", force: :cascade do |t|
+    t.string "floristName"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.string "phoneNumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "foodVendor", force: :cascade do |t|
+    t.string "fvName"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.string "phoneNumber"
+  end
+
+  create_table "food_vendors", force: :cascade do |t|
+    t.string "fvName"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.string "phoneNumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "planner", force: :cascade do |t|
+    t.string "wedding_date"
+  end
 
   create_table "planners", force: :cascade do |t|
     t.string "first_name"
@@ -21,4 +77,45 @@ ActiveRecord::Schema.define(version: 2019_10_08_224551) do
     t.string "wedding_date"
   end
 
+  create_table "user", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.bigint "planners_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["planners_id"], name: "index_users_on_planners_id"
+  end
+
+  create_table "venue", force: :cascade do |t|
+    t.string "venue_name"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.string "phoneNumber"
+  end
+
+  create_table "venues", force: :cascade do |t|
+    t.string "venue_name"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.string "phoneNumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "users", "planners", column: "planners_id"
 end
