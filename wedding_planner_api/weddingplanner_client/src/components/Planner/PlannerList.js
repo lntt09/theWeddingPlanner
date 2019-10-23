@@ -14,8 +14,7 @@ function PlannerList(props){
             
             {/* <button type="btn"><EditPlanner planner={planner} updatePlanner={props.updatePlanner}/></button> */}
             <Link to={`./planner/${planner.id}/edit`}><button>Edit</button> </Link>
-            
-            <button type="btn" className="btn btn-outline-danger btn-sm"onClick={()=>{props.deletePlanner(planner.id)}}>Delete</button>
+          
             </div>
         )
     })

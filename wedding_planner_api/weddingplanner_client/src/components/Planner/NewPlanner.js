@@ -1,67 +1,64 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import axios from 'axios'
+import { Redirect } from 'react-router-dom'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './NewPlanner.css'
+import Axios from 'axios';
 
 
 class NewPlanner extends Component {
-    constructor(){
-        super();
-        this.state = {
-            modal: false,
+
+    state = {
+        planner: {
             first_name: '',
             last_name: '',
             wedding_date: ''
-        }
-        this.toggle = this.toggle.bind(this);
+        },
+        modal: false,
+        redirectToPrevious: false
     }
 
-    toggle() {
-        this.setState(prevState => ({
-          modal: !prevState.modal
-        }));
-    }
 
     handleChange = (e) => {
-        this.setState({
-            [e.target.name] : e.target.value
-        })
-    }
+        const updatePlanner = {
+            ...this.state.planner
+        }
+        updatePlanner[e.target.name] = e.target.value
+        this.setState({planner: updatePlanner})
+      }
 
-    handleSubmit = (e) => {
+    handleSubmit = async(e) => {
         e.preventDefault();
-        this.props.createPlanner(this.state);
-        this.toggle();
+        await axios.post(`http://localhost:4000/planners`, {planner:this.state.planner})
+        this.setState({redirectToPrevious: true})
+        console.log(this.state.planner)
     }
 
-    render(){
-        return(
+    render() {
+        if (this.state.redirectToPrevious) {
+            return <Redirect to={`/`} />
+        }
+        return (
             <div>
-                <Button color="danger" onClick={this.toggle}>Add A New Planner</Button>
-                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                <ModalHeader toggle={this.toggle}>Lets Add A New Planner </ModalHeader>
-                <ModalBody className='modalbody'>
-                    <form onSubmit={this.handleSubmit}>
-                        <h3>Welcome bride...create your planner</h3>
-                        <label htmlFor="first_name">First Name:</label>
-                        <input type="text" name="first_name" onChange={this.handleChange} />
-                        <br />
-                        <br />
-                        <label htmlFor="last_name">Last Name:</label>
-                        <input name="last_name" onChange={this.handleChange}></input>
-                        <br />
-                        <br />
-                        <label htmlFor="wedding_date">Wedding Date:</label>
-                        <input type="text" name="wedding_date" onChange={this.handleChange} />
-                        <br />
-                        <br />
-                        
-                    </form>
-                </ModalBody>
-                <ModalFooter>
-                    <Button color="primary" onClick={this.handleSubmit}>Create Planner</Button>{' '}
-                    <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-                </ModalFooter>
-                </Modal>
+                <form onSubmit={this.handleSubmit}>
+                    <h3>Welcome bride...create your planner</h3>
+                    <label htmlFor="first_name">First Name:</label>
+                    <input type="text" name="first_name" onChange={this.handleChange} value={this.state.planner.first_name} />
+                    <br />
+                    <br />
+                    <label htmlFor="last_name">Last Name:</label>
+                    <input name="last_name" onChange={this.handleChange} value={this.state.planner.last_name}></input>
+                    <br />
+                    <br />
+                    <label htmlFor="wedding_date">Wedding Date:</label>
+                    <input type="text" name="wedding_date" onChange={this.handleChange} value={this.state.planner.wedding_date} />
+                    <br />
+                    <br />
+
+                    <input type="submit" value="submit" />
+
+                </form>
+
             </div>
         )
     }

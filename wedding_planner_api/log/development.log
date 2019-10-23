@@ -3580,3 +3580,453 @@ Processing by PlannersController#show as HTML
 Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 17.7ms | Allocations: 681)
 
 
+Started GET "/planners/10" for ::1 at 2019-10-23 18:46:53 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 746)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:48:28 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 681)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:50:37 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (3.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 681)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:51:12 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 681)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:57:00 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 746)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 18:57:08 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/planners_controller.rb:24:in `update'
+  [1m[36mPlanner Update (22.2ms)[0m  [1m[33mUPDATE "planners" SET "first_name" = $1 WHERE "planners"."id" = $2[0m  [["first_name", "Tester"], ["id", 10]]
+  ↳ app/controllers/planners_controller.rb:24:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/planners_controller.rb:24:in `update'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 23.0ms | Allocations: 2961)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 18:57:12 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 879)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 18:57:16 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 879)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:59:00 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 681)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 18:59:16 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester1", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/planners_controller.rb:24:in `update'
+  [1m[36mPlanner Update (0.3ms)[0m  [1m[33mUPDATE "planners" SET "first_name" = $1 WHERE "planners"."id" = $2[0m  [["first_name", "Tester1"], ["id", 10]]
+  ↳ app/controllers/planners_controller.rb:24:in `update'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/planners_controller.rb:24:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 2801)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 18:59:25 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.8ms | Allocations: 1271)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:59:30 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 681)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 18:59:34 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester1", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 888)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 18:59:41 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (19.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 19.1ms | Allocations: 681)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 19:00:06 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 681)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 19:00:09 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester1", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/planners/10" for ::1 at 2019-10-23 19:03:39 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 681)
+
+
+Started PATCH "/planners/10" for ::1 at 2019-10-23 19:03:45 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>10, "first_name"=>"Tester1", "last_name"=>"Ttest", "wedding_date"=>"01023024"}, "id"=>"10"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 879)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:04:12 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (22.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 2.1ms | ActiveRecord: 22.3ms | Allocations: 1269)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:04:14 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 681)
+
+
+Started PATCH "/planners/8" for ::1 at 2019-10-23 19:04:17 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>8, "first_name"=>"Shelli", "last_name"=>"Raynor", "wedding_date"=>"August 15, 2019"}, "id"=>"8"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:04:17 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1271)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:05:09 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1269)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:05:11 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 681)
+
+
+Started PATCH "/planners/8" for ::1 at 2019-10-23 19:05:13 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>8, "first_name"=>"Shelli", "last_name"=>"Raynor", "wedding_date"=>"August 15, 2019"}, "id"=>"8"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:05:13 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 1269)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:05:16 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 681)
+
+
+Started PATCH "/planners/8" for ::1 at 2019-10-23 19:07:07 -0400
+Processing by PlannersController#update as HTML
+  Parameters: {"planner"=>{"id"=>8, "first_name"=>"Shelli", "last_name"=>"Raynor", "wedding_date"=>"August 15, 2019"}, "id"=>"8"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:23:in `update'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:07:07 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms | Allocations: 1269)
+
+
+Started DELETE "/planners/10" for ::1 at 2019-10-23 19:07:20 -0400
+Processing by PlannersController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+  [1m[36mPlanner Destroy (23.4ms)[0m  [1m[31mDELETE FROM "planners" WHERE "planners"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+Completed 204 No Content in 28ms (Views: 0.1ms | ActiveRecord: 24.1ms | Allocations: 2260)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:07:26 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1182)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:12:17 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.0ms | Allocations: 1182)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:12:20 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 681)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:12:25 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.0ms | Allocations: 1182)
+
+
+Started GET "/planners/6" for ::1 at 2019-10-23 19:12:30 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 681)
+
+
+Started DELETE "/planners/6" for ::1 at 2019-10-23 19:12:32 -0400
+Processing by PlannersController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+  [1m[36mPlanner Destroy (0.4ms)[0m  [1m[31mDELETE FROM "planners" WHERE "planners"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/planners_controller.rb:29:in `destroy'
+Completed 204 No Content in 4ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2234)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:12:32 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.2ms | Allocations: 1094)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:13:06 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 1094)
+
+
+Started POST "/planners" for ::1 at 2019-10-23 19:13:24 -0400
+Processing by PlannersController#create as */*
+  Parameters: {"modal"=>true, "first_name"=>"Shelly", "last_name"=>"Raynor", "wedding_date"=>"August 18, 2018", "planner"=>{"first_name"=>"Shelly", "last_name"=>"Raynor", "wedding_date"=>"August 18, 2018"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/planners_controller.rb:15:in `create'
+  [1m[36mPlanner Create (2.5ms)[0m  [1m[32mINSERT INTO "planners" ("first_name", "last_name", "wedding_date") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Shelly"], ["last_name", "Raynor"], ["wedding_date", "August 18, 2018"]]
+  ↳ app/controllers/planners_controller.rb:15:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/planners_controller.rb:15:in `create'
+Completed 201 Created in 6ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2253)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:17:40 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 1183)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:17:54 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (3.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 682)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:33:01 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (1.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 745)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-23 19:33:38 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (2.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 681)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:33:45 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (19.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 2.3ms | ActiveRecord: 19.4ms | Allocations: 1185)
+
+
+Started GET "/planners/create" for ::1 at 2019-10-23 19:34:04 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mPlanner Load (3.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 3.0ms | Allocations: 599)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Planner with 'id'=create):
+  
+app/controllers/planners_controller.rb:9:in `show'
+Started GET "/planners" for ::1 at 2019-10-23 19:34:34 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.5ms | Allocations: 1181)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:34:56 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (9.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 1.7ms | ActiveRecord: 9.4ms | Allocations: 1183)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:35:21 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1182)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:36:24 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1182)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:40:36 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (2.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 2.3ms | Allocations: 1182)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:42:34 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1182)
+
+
+Started POST "/planners" for ::1 at 2019-10-23 19:42:51 -0400
+Processing by PlannersController#create as HTML
+  Parameters: {"planner"=>{"first_name"=>"Anna", "last_name"=>"Huynh", "wedding_date"=>"May 20, 2018"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/planners_controller.rb:15:in `create'
+  [1m[36mPlanner Create (0.5ms)[0m  [1m[32mINSERT INTO "planners" ("first_name", "last_name", "wedding_date") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Anna"], ["last_name", "Huynh"], ["wedding_date", "May 20, 2018"]]
+  ↳ app/controllers/planners_controller.rb:15:in `create'
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/planners_controller.rb:15:in `create'
+Completed 201 Created in 15ms (Views: 0.3ms | ActiveRecord: 11.9ms | Allocations: 2201)
+
+
+Started GET "/planners" for ::1 at 2019-10-23 19:42:51 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1269)
+
+

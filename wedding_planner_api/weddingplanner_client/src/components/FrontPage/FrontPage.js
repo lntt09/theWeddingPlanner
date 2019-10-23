@@ -15,24 +15,24 @@ class FrontPage extends Component {
         this.getPlanners()
     }
 
-    updatePlanner = async (id, formData) => {
-        const updatePlanner = await fetch(`http://localhost:4000/planners/${id}`, {
-            method: "PUT",
-            body: JSON.stringify(formData),
-            // credentials: "include",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        const parsedResponse = await updatePlanner.json();
-        if (parsedResponse.status === 201) {
-            this.setState({
-                planners: formData
-            })
-            console.log(formData)
-        }
-        console.log(parsedResponse)
-    };
+    // updatePlanner = async (id, formData) => {
+    //     const updatePlanner = await fetch(`http://localhost:4000/planners/${id}`, {
+    //         method: "PUT",
+    //         body: JSON.stringify(formData),
+    //         // credentials: "include",
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         }
+    //     })
+    //     const parsedResponse = await updatePlanner.json();
+    //     if (parsedResponse.status === 201) {
+    //         this.setState({
+    //             planners: formData
+    //         })
+    //         console.log(formData)
+    //     }
+    //     console.log(parsedResponse)
+    // };
 
     deletePlanner = async (id) => {
         console.log(id);
@@ -53,28 +53,28 @@ class FrontPage extends Component {
         }
     };
 
-    createPlanner = async (formData) => {
-        console.log(formData);
-        try {
-            const newPlanner = await fetch('http://localhost:4000/planners', {
-                method: "POST",
-                body: JSON.stringify(formData),
-                // credentials: "include",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            })
-            const parsedResponse = await newPlanner.json();
-            if (parsedResponse.status === 201) {
-                this.setState({
-                    planners: [parsedResponse, ...this.state.planners]
-                })
-            }
-        }
-        catch (err) {
-            console.log(err)
-        }
-    };
+    // createPlanner = async (formData) => {
+    //     console.log(formData);
+    //     try {
+    //         const newPlanner = await fetch('http://localhost:4000/planners', {
+    //             method: "POST",
+    //             body: JSON.stringify(formData),
+    //             // credentials: "include",
+    //             headers: {
+    //                 "Content-Type": "application/json"
+    //             }
+    //         })
+    //         const parsedResponse = await newPlanner.json();
+    //         if (parsedResponse.status === 201) {
+    //             this.setState({
+    //                 planners: [parsedResponse, ...this.state.planners]
+    //             })
+    //         }
+    //     }
+    //     catch (err) {
+    //         console.log(err)
+    //     }
+    // };
 
     // getPlanners = async() =>{
     //     try{
@@ -126,7 +126,8 @@ class FrontPage extends Component {
                 <h1 className="frontpageHeader">Our Current Brides</h1>
 
                 <PlannerList planners={this.state.planners} deletePlanner={this.deletePlanner} updatePlanner={this.updatePlanner} />
-                <NewPlanner createPlanner={this.createPlanner} />
+                
+                {/* <NewPlanner createPlanner={this.createPlanner} /> */}
 
             </div>
         )
