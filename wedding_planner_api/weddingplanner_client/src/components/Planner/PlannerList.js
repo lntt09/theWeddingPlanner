@@ -1,5 +1,6 @@
 import React from 'react';
-// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {Link} from "react-router-dom";
+
 import EditPlanner from './EditPlanner'
 import './PlannerList.css'
 
@@ -11,8 +12,9 @@ function PlannerList(props){
                 <p>{planner.wedding_date}</p>
 
             
-            <EditPlanner planner={planner} updatePlanner={props.updatePlanner}/>
-            <button type="btn" className="btn btn-outline-danger btn-sm"onClick={()=>{props.deletePlanner(planner.id)}}>Delete</button>
+            {/* <button type="btn"><EditPlanner planner={planner} updatePlanner={props.updatePlanner}/></button> */}
+            <Link to={`./planner/${planner.id}/edit`}><button>Edit</button> </Link>
+          
             </div>
         )
     })

@@ -1,23 +1,33 @@
-import React from 'react';
-import EditPlanner from './EditPlanner'
+import React, { Component } from 'react'
+import axios from 'axios'
 
-function ShowPlanner(props){
-    const planners = props.planners.map(function(planner){
-        return(
-            <div id key={planner.id}>
-                <a href={'/planner/'+ planner.id}><h3>{planner.first_name} {planner.last_name}</h3></a>
-                <Planners showPlanners={props.showPlanner} />
-                         
-                <EditPlanner planner={planner} updatePlanner={props.updatePlanner}/>
-                <button type="btn" class="btn btn-outline-danger btn-sm"onClick={()=>{props.deletePlanner(planner.id)}}>Delete</button>
+export default class ShowPlanner extends Component {
+    state = {
+        planner: {
+            first_name: '',
+            last_name: '',
+            wedding_date: ''
+        }
+    }
+    componentDidMount() {
+        this.showPlanner()
+    }
+
+    showPlanner = async () => {
+        const plannerId = this.props.match.params.plannerId
+        const planner = await axios.get(`http://localhost:4000/planners/${plannerId}`)
+        this.setState({
+            planner: planner.data.planner
+        })
+        console.log(this.state.planner)
+    }
+    render() {
+        return (
+            <div>
+                {this.state.planner.first_name} 
+                {this.state.planner.last_name}
+                
             </div>
         )
-    })
-
-    return(
-        <div>
-            {planners.id}
-        </div>
-    )
+    }
 }
-export default ShowPlanner
