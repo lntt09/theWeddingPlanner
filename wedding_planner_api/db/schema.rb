@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_23_173748) do
+ActiveRecord::Schema.define(version: 2019_10_26_170945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +75,14 @@ ActiveRecord::Schema.define(version: 2019_10_23_173748) do
     t.string "first_name"
     t.string "last_name"
     t.string "wedding_date"
+    t.bigint "venues_id"
+    t.bigint "food_vendors_id"
+    t.bigint "bands_id"
+    t.bigint "florists_id"
+    t.index ["bands_id"], name: "index_planners_on_bands_id"
+    t.index ["florists_id"], name: "index_planners_on_florists_id"
+    t.index ["food_vendors_id"], name: "index_planners_on_food_vendors_id"
+    t.index ["venues_id"], name: "index_planners_on_venues_id"
   end
 
   create_table "user", force: :cascade do |t|
@@ -117,5 +125,9 @@ ActiveRecord::Schema.define(version: 2019_10_23_173748) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "planners", "bands", column: "bands_id"
+  add_foreign_key "planners", "florists", column: "florists_id"
+  add_foreign_key "planners", "food_vendors", column: "food_vendors_id"
+  add_foreign_key "planners", "venues", column: "venues_id"
   add_foreign_key "users", "planners", column: "planners_id"
 end

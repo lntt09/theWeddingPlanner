@@ -12,7 +12,6 @@ function PlannerList(props){
                 <p>{planner.wedding_date}</p>
 
             
-            {/* <button type="btn"><EditPlanner planner={planner} updatePlanner={props.updatePlanner}/></button> */}
             <Link to={`./planner/${planner.id}/edit`}><button>Edit</button> </Link>
           
             </div>

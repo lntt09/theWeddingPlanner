@@ -4030,3 +4030,1036 @@ Processing by PlannersController#index as */*
 Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1269)
 
 
+Started GET "/planners" for ::1 at 2019-10-23 19:45:53 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1269)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 10:14:37 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.7ms | Allocations: 1309)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 10:28:34 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.9ms | Allocations: 1309)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 10:28:38 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 707)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 11:45:48 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 1310)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 11:47:53 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 1269)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 12:09:44 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1309)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 12:10:16 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (17.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 2.5ms | ActiveRecord: 17.2ms | Allocations: 1269)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:22:50 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 745)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:23:30 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 681)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 12:23:34 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1271)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:23:40 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 681)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 12:23:46 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1269)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:25:41 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 681)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:26:08 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 681)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:26:48 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 681)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:27:46 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 681)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:28:24 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 681)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:29:36 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 681)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:52:45 -0400
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 4.6ms | Allocations: 4271)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 12:53:39 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 696)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6929459041628852190)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddVenuesToPlanner (20191026165808)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.8ms)[0m  [1m[35mALTER TABLE "planners" ADD "venues_id" bigint NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6929459041628852190)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6929459041628852190)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddVenuesToPlanner (20191026165808)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "planners" ADD "venues_id" bigint[0m
+  [1m[35m (18.0ms)[0m  [1m[35mCREATE  INDEX  "index_planners_on_venues_id" ON "planners"  ("venues_id")[0m
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE "planners" ADD CONSTRAINT "fk_rails_5e51c2ed26"
+FOREIGN KEY ("venues_id")
+  REFERENCES "venues" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191026165808"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6929459041628852190)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6929459041628852190)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddFoodVendorsToPlanner (20191026170416)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.0ms)[0m  [1m[35mALTER TABLE "planners" ADD "food_vendors_id" bigint[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE  INDEX  "index_planners_on_food_vendors_id" ON "planners"  ("food_vendors_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "planners" ADD CONSTRAINT "fk_rails_2aebd68632"
+FOREIGN KEY ("food_vendors_id")
+  REFERENCES "food_vendors" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191026170416"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddfloristsToPlanner (20191026170443)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191026170443"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBandsToPlanner (20191026170521)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "planners" ADD "bands_id" bigint[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE  INDEX  "index_planners_on_bands_id" ON "planners"  ("bands_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "planners" ADD CONSTRAINT "fk_rails_7256b44260"
+FOREIGN KEY ("bands_id")
+  REFERENCES "bands" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191026170521"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6929459041628852190)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6929459041628852190)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddFloristsToPlanner (20191026170945)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "planners" ADD "florists_id" bigint NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6929459041628852190)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6929459041628852190)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddFloristsToPlanner (20191026170945)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "planners" ADD "florists_id" bigint[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE  INDEX  "index_planners_on_florists_id" ON "planners"  ("florists_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "planners" ADD CONSTRAINT "fk_rails_a3918cfdc5"
+FOREIGN KEY ("florists_id")
+  REFERENCES "florists" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191026170945"]]
+  [1m[35m (10.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6929459041628852190)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/planners" for ::1 at 2019-10-26 13:36:08 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 5.3ms | Allocations: 7149)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 13:36:12 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1181)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 13:36:19 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.8ms | Allocations: 1453)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 13:36:23 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 736)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 13:39:38 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (3.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 736)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 13:40:11 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 13:40:36 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1437)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-26 13:40:38 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (15.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 15.0ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 13:41:04 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (25.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 2.3ms | ActiveRecord: 25.9ms | Allocations: 1442)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 13:41:06 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 13:41:09 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1437)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-26 13:41:11 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-26 13:42:27 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (18.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 18.7ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-26 13:43:09 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 13:43:11 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1437)
+
+
+Started GET "/planners/2" for ::1 at 2019-10-26 13:43:15 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlanner Load (4.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 15:00:46 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (8.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 8.6ms | Allocations: 1477)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 16:27:36 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (22.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 2.3ms | ActiveRecord: 22.7ms | Allocations: 1477)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 16:29:35 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1439)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 16:29:43 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 1437)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 16:30:12 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1437)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 16:35:51 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1437)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 16:35:55 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 749)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 16:37:12 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (18.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 18.4ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 16:40:19 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (10.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 10.1ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 16:44:27 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (2.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 2.9ms | Allocations: 1437)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-26 16:50:02 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-10-26 17:01:06 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (1.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.9ms | Allocations: 1477)
+
+
+Started GET "/planners/2" for ::1 at 2019-10-26 17:01:12 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 748)
+
+
+Started GET "/planners" for ::1 at 2019-10-28 22:32:44 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (28.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 6.3ms | ActiveRecord: 28.8ms | Allocations: 1477)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:32:54 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 10.3ms | Allocations: 748)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:33:55 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 11.1ms | Allocations: 6871)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:34:50 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 736)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:37:02 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 736)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:39:19 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (24.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 24.0ms | Allocations: 736)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:39:51 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:42:34 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (3.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:45:59 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (12.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 12.7ms | Allocations: 736)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:48:09 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:51:05 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (5.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 5.9ms | Allocations: 724)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 22:53:06 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 23:01:51 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 786)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 23:03:13 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (3.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-28 23:12:07 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (1.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 786)
+
+
+Started GET "/planners/8" for ::1 at 2019-10-29 19:01:24 -0400
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (17.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 53ms (Views: 0.4ms | ActiveRecord: 41.1ms | Allocations: 6871)
+
+
+Started GET "/planners" for ::1 at 2019-10-29 19:04:54 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1457)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:04:58 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 736)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:13:46 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 797)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:33:03 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 811)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:36:11 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:37:07 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:42:30 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 785)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:43:22 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (2.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:43:28 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (7.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 7.6ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:43:42 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:46:58 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:48:08 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (8.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 8.8ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:50:11 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:50:27 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 19:50:37 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:40:02 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (12.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 12.2ms | Allocations: 785)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:40:27 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:42:57 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:43:05 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (13.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 13.9ms | Allocations: 722)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:47:08 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:48:02 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:48:20 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:50:49 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 731)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:50:57 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:54:30 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:55:12 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:56:10 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:58:35 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 21:59:55 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:00:58 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:01:50 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:02:36 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:03:44 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:05:06 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:06:11 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:06:52 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (4.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 4.6ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:08:37 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:10:28 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:11:27 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (2.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:11:55 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:13:35 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.3ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:16:56 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-29 22:18:14 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-30 20:43:48 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (0.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 787)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-30 20:44:02 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-10-30 20:46:55 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (1.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 721)
+
+
+Started GET "/planners/9" for ::1 at 2019-11-01 11:28:16 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (12.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 32ms (Views: 2.0ms | ActiveRecord: 12.3ms | Allocations: 786)
+
+
+Started GET "/planners/9" for ::1 at 2019-11-01 13:03:53 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlanner Load (25.7ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 25.9ms | Allocations: 785)
+
+
+Started GET "/planners" for ::1 at 2019-11-01 13:20:29 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (3.9ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 3.9ms | Allocations: 1479)
+
+
+Started GET "/planners/8" for ::1 at 2019-11-01 13:20:41 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (1.2ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 8.9ms | Allocations: 747)
+
+
+Started GET "/planners/8" for ::1 at 2019-11-01 13:22:23 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (1.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 721)
+
+
+Started GET "/planners/8" for ::1 at 2019-11-01 13:23:20 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.4ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-11-02 03:19:07 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (21.1ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 8.6ms | ActiveRecord: 21.1ms | Allocations: 1477)
+
+
+Started GET "/planners/8" for ::1 at 2019-11-02 03:24:47 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (1.0ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 1.2ms | Allocations: 786)
+
+
+Started GET "/planners/8" for ::1 at 2019-11-02 03:24:52 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.5ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 721)
+
+
+Started GET "/planners" for ::1 at 2019-11-02 03:25:00 -0400
+Processing by PlannersController#index as */*
+  [1m[36mPlanner Load (0.8ms)[0m  [1m[34mSELECT "planners".* FROM "planners"[0m
+  ↳ app/controllers/planners_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.8ms | Allocations: 1439)
+
+
+Started GET "/planners/8" for ::1 at 2019-11-02 03:25:37 -0400
+Processing by PlannersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlanner Load (0.6ms)[0m  [1m[34mSELECT "planners".* FROM "planners" WHERE "planners"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/planners_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 724)
+
+
