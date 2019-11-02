@@ -1,9 +1,20 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from "react-router-dom";
-import './ShowPlanner.css'
+import { Provider } from 'react-redux'
+
+
 import ToDoList from '../ToDoList/ToDoList'
 import Venues from '../Venues/Venues'
+import Comments from '../Comments/Comments'
+import CommentForm from '../Comments/CommentForm'
+import store from '../Comments/store'
+
+
+import './ShowPlanner.css'
+
+
+
 
 
 export default class ShowPlanner extends Component {
@@ -28,26 +39,43 @@ export default class ShowPlanner extends Component {
         console.log(this.state.planner)
     }
 
+
+
     render() {
 
         return (
-            <div>
-                <div className="showbridename" >
-                    <h1 > {this.state.planner.first_name} {this.state.planner.last_name} </h1>
-                    <h3>Selected Venue: {this.state.planner.venues_id}</h3>
+            <Provider store={store}>
+                <div className="plannerContainer">
+                    <div className="showbridename" >
+                        <h1 > {this.state.planner.first_name} {this.state.planner.last_name} </h1>
+                        <h3>***{this.state.planner.wedding_date}***</h3>
+                    </div>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className="col">
+                                <Venues />
+                            </div>
 
-                    
-                </div>
-                <div className = "todolist">
-                    <ToDoList />
-                    
-                </div>
-                <div className = "venueList">
-                    <Venues />
-                </div>
-                
-            </div>
+                            <div className="col-6">
+                                <ToDoList />
+                            </div>
 
+                            <div className="col-5">
+                                <CommentForm />
+                            </div>
+                            <div className='col'>     
+                                <Comments />
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </Provider>
         )
     }
+
+
 }

@@ -16,8 +16,8 @@ export default class Search extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.props.getVenues( this.state.searchInput)}>
-                    <input onChange={this.changeHandler} type="text" placeholder="search venue" name="searchInput" id="searchInput" />
+                <form onSubmit={this.props.getVenues.bind(null, this.state.searchInput)}>
+                    <input onChange={this.changeHandler} type="text" placeholder="search venues" name="searchInput" id="searchInput" />
                     <button type="submit" >Search</button>
                 </form>
             </div>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
+
 import FrontPage from './components/FrontPage/FrontPage';
 import Header from "./components/Static/Header"
 import ShowPlanner from "./components/Planner/ShowPlanner"
 import EditPlanner from "./components/Planner/EditPlanner"
 import NewPlanner from "./components/Planner/NewPlanner"
 
+import './App.css';
 
 function App() {
   return (
