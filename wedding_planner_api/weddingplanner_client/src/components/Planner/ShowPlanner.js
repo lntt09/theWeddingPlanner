@@ -51,24 +51,22 @@ export default class ShowPlanner extends Component {
                         <h3>***{this.state.planner.wedding_date}***</h3>
                     </div>
                     <div className='container'>
-                        <div className='row'>
-                            <div className="col">
+                    
+                            <div className="venueList">
                                 <Venues />
                             </div>
 
-                            <div className="col-6">
+                            <div className="todoList">
                                 <ToDoList />
                             </div>
 
-                            <div className="col-5">
+                            <div className="commentsForm">
                                 <CommentForm />
                             </div>
-                            <div className='col'>     
+                            <div className='comments'>     
                                 <Comments />
                             </div>
-                        </div>
-
-
+                        
                     </div>
 
 

@@ -14,13 +14,18 @@ function PlannerList(props){
             
             <Link to={`./planner/${planner.id}/edit`}><button>Edit</button> </Link>
           
+            
+
             </div>
         )
     })
 
     return(
-        <div className="listofplanners">
-            {planners}
+        <div>
+            <div className="listofplanners">
+                {planners}
+            </div>
+            
         </div>
     )
 }
