@@ -16,10 +16,11 @@ export default class Search extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.props.getVenues.bind(null, this.state.searchInput)}>
+                {/* <form onSubmit={this.props.getVenues.bind(null, this.state.searchInput)}> */}
                     <input onChange={this.changeHandler} type="text" placeholder="search venues" name="searchInput" id="searchInput" />
-                    <button type="submit" >Search</button>
-                </form>
+                    {/* <button type="submit" >Search</button> */}
+                    <button onClick={this.props.getVenues.bind(null,this.state.searchInput)}>Search</button>
+                {/* </form> */}
             </div>
         )
     }
